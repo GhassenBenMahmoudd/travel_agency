@@ -1,0 +1,7 @@
+<div class="container">
+    <input type="text"class="r" name="recherche" size="80" placeholder="Recherche">  <img src="/assets/R.png">
+    <h1>Hotel</h1>
+    <div *ngFor="let h of lesHotels" class ="list-group">
+        <app-list-hotel [hotel]="h" class="list-group-item"></app-list-hotel>
+    </div>
+</div>
